@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++20 -O2
 LDFLAGS = -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 TARGET = main
-SRC = main.cpp
+SRC = src/main.cpp
 
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
